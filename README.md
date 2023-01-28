@@ -2,7 +2,8 @@
 A module to parse solidity response structs to JSON
 
 This is a WIP that I need for a personal project. I couldnt find a library that can parse the structs returned by a smart contract into plain JSON, so i created this simple module.
-Tests and more features will be added later. 
+Tests and more features will be added later as I have more time.
+PRs are more than welcome!
 
 As an example, lets take the Contracts struct defined in my solidity contract:
 
@@ -17,6 +18,12 @@ struct Contract{
 ```
 
 getContractsForAddress method returns an array of Contract
+
+https://www.npmjs.com/package/solidity-struct-parser
+
+```
+npm install solidity-struct-parser
+```
 
 ```
 const {ParseSolidityStruct} = require("solidity-struct-parser");
