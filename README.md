@@ -32,7 +32,7 @@ const parsedContracts = ParseSolidityStruct(contracts);
     "totalValue": 200,
     "unlockTime": 1675014383,
     "whiteListedParties": [
-        "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC", "0x90F79bf6EB2c4f870365E785982E1f101E93b906"],
+        "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC", "0x90F79bf6EB2c4f870365E785982E1f101E93b906"
     ]
   }
 ]
