@@ -3,3 +3,37 @@ A module to parse solidity response structs to JSON
 
 This is a WIP that I need for a personal project.
 Tests and more features will be added later
+
+As an example, lets take the Contracts struct defined in my solidity contract:
+
+```
+struct Contract{
+    uint256 _Id;
+    address createdBy;
+    uint256 totalValue;
+    uint unlockTime;
+    address[] whiteListedParties;
+}
+```
+
+getContractsForAddress method returns an array of Contract
+
+```
+const {ParseSolidityStruct} = require("solidity-struct-parser");
+contracts = await escrow.connect(wallet).getContractsForAddress();
+const parsedContracts = ParseSolidityStruct(contracts);
+
+
+//parsedContracts will equal
+[
+  {
+    "_Id": 1,
+    "createdBy": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+    "totalValue": 200,
+    "unlockTime": 1675014383,
+    "whiteListedParties": [
+        "0x3C44CdDdB6a900fa2b585dd299e03d12FA4293BC", "0x90F79bf6EB2c4f870365E785982E1f101E93b906"],
+    ]
+  }
+]
+```
