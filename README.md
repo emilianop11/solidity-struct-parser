@@ -1,8 +1,8 @@
 # solidity-struct-parser
 A module to parse solidity response structs to JSON
 
-This is a WIP that I need for a personal project.
-Tests and more features will be added later
+This is a WIP that I need for a personal project. I couldnt find a library that can parse the structs returned by a smart contract into plain JSON, so i created this simple module.
+Tests and more features will be added later. 
 
 As an example, lets take the Contracts struct defined in my solidity contract:
 
