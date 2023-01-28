@@ -17,8 +17,6 @@ struct Contract{
 }
 ```
 
-getContractsForAddress method returns an array of Contract
-
 https://www.npmjs.com/package/solidity-struct-parser
 
 ```
@@ -27,6 +25,7 @@ npm install solidity-struct-parser
 
 ```
 const {ParseSolidityStruct} = require("solidity-struct-parser");
+//getContractsForAddress() returns an array of Contract
 contracts = await escrow.connect(wallet).getContractsForAddress();
 const parsedContracts = ParseSolidityStruct(contracts);
 
