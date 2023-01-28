@@ -1,0 +1,28 @@
+{
+  "name": "solidity-struct-parser",
+  "version": "1.0.0",
+  "description": "A module to parse solidity structs to json",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilianop11/solidity-struct-parser.git"
+  },
+  "keywords": [
+    "solidity",
+    "struct",
+    "parsing",
+    "json",
+    "blockchain",
+    "ethers",
+    "ethereum"
+  ],
+  "author": "Emiliano Pelliccioni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emilianop11/solidity-struct-parser/issues"
+  },
+  "homepage": "https://github.com/emilianop11/solidity-struct-parser#readme"
+}
